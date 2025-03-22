@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+      body{
+        background-color: oldlace;
+      }
+      .asd{
+        font-style: italic;
+        font-weight: bold;
+        font-size: 32px;
+        border: 2px solid black;
+        height: 60px;
+        width: 270px;
+        text-align: center;
+        color: blue;
+      }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+      <div class="asd">Register Yourself</div>
+      <br>
+      <br>
+          <form action="table.html" onsubmit="return checkvlidation()">
+            <div class="mb-3">
+                <p>Full Name</p>
+                <input type="name" class="form-control" placeholder="Enter Your Full Name" id="amit">
+                <div class="err" id="Name_errer"></div>
+            </div>
+            <div class="mb-3">
+        <label for="email" class="form-label">Email Address </label>
+        <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
+    
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label" id="akr">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter Your Password">
+            </div>
+            <div class="mb-3">
+                <p>Phone Number</p>
+                <input type="number" class="form-control" id="ami" placeholder="Enter Your Phone Number">
+            </div>
+            <b>Gender</b>
+            <div class="form-check">
+                
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Male
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Female
+                </label>
+              </div>
+              <b>Intrest:</b>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexChec">
+                <label class="form-check-label" for="flexChec">
+                  Music
+                </label>
+              </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="fleCheck">
+                <label class="form-check-label" for="fleCheck">
+                  Teaching
+                </label>
+            </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexChek">
+                    <label class="form-check-label" for="flexChek">
+                      Playing
+                    </label>
+                </div>
+                <b>Select City:</b>
+                 <select class="form-select">
+                    <option selected>Select the City</option>
+                    <option value="1">Agra</option>
+                    <option value="2">Mathura</option>
+                    <option value="3">Etah</option>
+                    <option value="4">Farrukhabad</option>
+                 </select>
+                 <b>Terms & Condition</b>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="agree" class="farr">
+                    <label class="form-check-label" for="agree">I Agree All The Terms & Condition</label>
+                </div> 
+                <div class="nb-3">
+                  <label for="from file" class="form-label"><b>Upload file</b></label>
+                  <input class="form-control" type="file" id="formfile">
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                
+            </div>
+</form>
+<script>
+  function checkvlidation(){
+   let x= document.getElementById('amit').value;
+   if(x==""){  let n= document.getElementById('Name_errer');
+   //n.textContent="name is required"
+   alert("name is required");
+      return false;   }
+   else {  let n = document.getElementById('Name_errer');
+      n.textContent= (""); }
+
+    let z=document.getElementById('email').value;
+   if(z==""){
+    alert("email is empty");
+   return false;
+   }
+
+   let a=document.getElementById('ami').value;
+if(a==""){
+   alert("phone number is empty");
+   return false;
+}
+}
+  </script>
+</html>
