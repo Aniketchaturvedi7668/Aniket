@@ -11,7 +11,7 @@
         body{
             display: flex;
             font-family: Arial, sans-serif;
-            text-align: center;
+            
         
         }
         .sidebar{

@@ -13,19 +13,19 @@
     <body>
     <div class="container"> 
         <!-- Navbar -->   
-     <?php include('navbar.html'); ?>
-       <div class="col-sm-12 ok">
-            <ul class="g">
-                <li class="kil"><a href="pad.png">KILOS</a></li>
-                <li class="mob"><a href="">MOBILE</a></li>
-                <li class="fai"><a href="">FAISHON</a></li>
-                <li class="elec"><a href="">ELECTONICS</a></li>
-                <li class="hofu"><a href="">HOME & FURNITURE</a></li>
-                <li class="app"><a href="">APPLIANCES</a></li>
-                <li class="fly"><a href="">FLIGHT BOOKING</a></li>
+      <?php include('navbar.html'); ?>
+       <div class="col-sm-12 g">
+            <ul>
+                
+                <li class="col-sm 2"><a href="">MOBILE</a></li>
+                <li class="col-sm 2"><a href="">FAISHON</a></li>
+                <li class="col-sm 2"><a href="">ELECTONICS</a></li>
+                <li class="col-sm 2"><a href="">HOME & FURNITURE</a></li>
+                <li class="col-sm 2"><a href="">APPLIANCES</a></li>
+                <li class="col-sm 2"><a href="">FLIGHT BOOKING</a></li>
             </ul>
         </div>
-    
+      <div class="col-sm 12">
         <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
             <!-- Indicators -->
             <div class="carousel-indicators">
@@ -69,26 +69,26 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+        </div>
          
-         <div class="col-sm-12 row">
-         <div class="col-sm-10">
-             <div class="bes">
+         <div class="col-sm 12 row">
+         
+            
+            <div class="bes">
                 Best Of Electronics
             </div>
             <ul>
-                <li class="ond"><a href="sidebar.php" style="padding:0 !important;" hover-background-color="white !important"><img src="Projector.png">Projector</a></li>
-                <li class="ond"><a href="pad.png"style="padding:0 !important;"><img src="T.V.png" alt="">Led</a></li>
-                <li class="ond"><img src="T.V.png" alt="">tv</li>
-                <li class="ond"><img src="Watch.png" alt="">Watch</li>
-                <li class="ond"><img src="Printer.png" alt="">Printer</li>
-
+                <li class="col-sm-2 ond"><a href="sidebar.php"style="background-color:white;"><img src="Projector.png">Projector</a></li>
+                <li class="col-sm-2 ond"><a href="pad.png"style="background-color:white;"><img src="T.V.png" alt="">Led</a></li>
+                <li class="col-sm-2 ond"><img src="Watch.png" alt="">Watch</li>
+                <li class="col-sm-2 ond"><img src="Watch.png" alt="">Watch</li>
+                <li class="col-sm-2 ond"><img src="Printer.png" alt="">Printer</li>
+                <li class="col-sm-2 ond"><img src="shoes.png" alt="">Rebook Shoes</li>
             </ul>
          </div>
-         <div class="col-sm-2 flo"><img style="margin-left: 0px;" src="shoes.png" alt="">Rebook Shoes</div>
-        </div>
-    
+         
         <div class="row">
-            <div class="col-sm-5 min">
+            <div class="col-sm-6 min">
                <div class="svb">
                    Best of Accessory
                </div>
@@ -103,7 +103,7 @@
                
                </div>
            </div>
-         <div class="qtr">
+         
             
         <div class=" row col-sm-12">
           
@@ -114,7 +114,7 @@
                 <div class="col-sm-1 ak"><img src="Watch.png" alt="">Microphone</div>
                 <div class="col-sm-1 ak"><img src="mat.png" alt="">Mat</li></div>
             
-        </div>
+            </div>
         
              <div class="row box col-sm-4">
                 <h1 class="fst-italic text-primary">Trending</h1>
@@ -131,21 +131,18 @@
             <div class="col-sm-1 ak"></div>
             <div class="col-sm-1 ak"></div>
             <div class="col-sm-1 ak"></div>
+</div>
+    
+
         
-    </div>
-        
-    </div>
+    
     <!-- footer -->
     <div class="footer">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos distinctio, impedit doloremque doloribus odit fugit. Facilis blanditiis, similique tenetur, vel minima illum maxime quod minus, eligendi voluptatibus deserunt magnam assumenda.
     </div>
-       
-</div>
+</div>   
+
 </div>
 </body>
 <script src="js/bootstrap.bundle.js"></script>
-<script>
-  for(let i=0;i<10;i++);
-  console.log("i")
-</script>
 </html>
