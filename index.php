@@ -12,7 +12,8 @@
     </head>
     <body>
     <div class="container"> 
-        <!-- Navbar -->   
+        <!-- Navbar --> 
+           
       <?php include('navbar.html'); ?>
        <div class="col-sm-12 g">
             <ul>
